@@ -25,4 +25,12 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
     # specify models and fields
     class Meta:
         model = Project
-        fields = ("id", "title", "description", "link", "img_url")
+        fields = (
+            "id",
+            "title",
+            "description",
+            "link",
+            "img_url",
+            "rank",
+            "is_featured",
+        )

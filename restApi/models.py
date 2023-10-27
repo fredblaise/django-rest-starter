@@ -7,6 +7,8 @@ class Project(models.Model):
     description = models.TextField()
     link = models.URLField()
     img_url = models.URLField()
+    rank = models.IntegerField()
+    is_featured = models.BooleanField()
 
     DisplayFields = [
         "id",
@@ -14,6 +16,8 @@ class Project(models.Model):
         "description",
         "link",
         "img_url",
+        "rank",
+        "is_featured",
     ]
 
     def __str__(self):
