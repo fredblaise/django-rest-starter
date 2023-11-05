@@ -30,6 +30,7 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
             "title",
             "description",
             "link",
+            "github_link",
             "img_url",
             "rank",
             "is_featured",

@@ -6,6 +6,7 @@ class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     link = models.URLField()
+    github_link = models.URLField()
     img_url = models.URLField()
     rank = models.IntegerField()
     is_featured = models.BooleanField()
@@ -15,6 +16,7 @@ class Project(models.Model):
         "title",
         "description",
         "link",
+        "github_link",
         "img_url",
         "rank",
         "is_featured",
